@@ -15,7 +15,7 @@ get '/' do
 end
 
 post '/' do
-  username = Rack::Utils.escape_html(params[:user_name]).empty?
+  username = Rack::Utils.escape_html(params[:user_name])
   if username.empty?
     username = "No Name"
   end
