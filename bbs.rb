@@ -27,8 +27,8 @@ post '/' do
 
   # encrypt password
   delete_key = params[:del_key]
-  delete_key.present?
-    delete_key = 0000
+  if delete_key.present?
+    delete_key = "0000"
   end
   password_salt = BCrypt::Engine.generate_salt
   password_hash = BCrypt::Engine.hash_secret(delete_key, password_salt)
