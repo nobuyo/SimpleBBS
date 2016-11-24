@@ -20,7 +20,7 @@ post '/' do
 end
 
 delete '/' do
-  post = Post.find(id: params[:id])
+  post = Post.find(params[:id])
   post.destroy
   redirect '/'
 end
