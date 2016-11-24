@@ -16,7 +16,7 @@
           <form method="post">
             <input type="hidden" name="_method" value="delete" />
             <input type="hidden" name="id" value="<%= p.id %>" />
-            <input type="number" class="form-control del-key col-xs-2" name="del_key"/>
+            <input type="number" maxlength="4" class="form-control del-key col-xs-2" name="del_key"/>
             <input type="submit" id="" class="btn btn-default btn-sm" value="del" />
           </form>
         </div>
@@ -38,7 +38,7 @@
       </div>
       <div class="col-xs-2">
         <label>Delete key</label>
-        <input type="number" class="form-control" name="del_key" placeholder="0000">
+        <input type="number" maxlength="4" class="form-control" name="del_key" placeholder="0000">
       </div>
       <div class="col-xs-2">
         <button type="submit" id="btn-post" class="btn btn-default" disabled="disabled">GO</button>
