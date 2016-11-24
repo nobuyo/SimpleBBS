@@ -9,13 +9,20 @@ ActiveRecord::Base.establish_connection :development
 class Post < ActiveRecord::Base
 end
 
+helpers do
+    include Rack::Utils
+    alias_method :h,:escape_html
+end
+
 get '/' do
   @posts = Post.all
   erb :index
 end
 
 post '/' do
-  Post.create(message: params[:mess], posted_at: Time.now, user_name: params[:user_name])
+  username = Rack::Utils.escape_html(params[:user_name]) || "No Name"
+  message  = Rack::Utils.escape_html(params[:mess])
+  Post.create(message: message, posted_at: Time.now, user_name: username)
   redirect '/'
 end
 
