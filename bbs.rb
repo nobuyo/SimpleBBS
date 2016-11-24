@@ -42,6 +42,7 @@ delete '/' do
   post = Post.find(params[:id])
   if post && post.hashed_delete_key == BCrypt::Engine.hash_secret(params[:del_key], post.salt)
     post.destroy
+    # todo : flash
   end
   redirect '/'
 end

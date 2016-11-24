@@ -16,6 +16,7 @@
           <form method="post">
             <input type="hidden" name="_method" value="delete" />
             <input type="hidden" name="id" value="<%= p.id %>" />
+            <!-- todo: restrict length -->
             <input type="number" class="form-control" name="del_key"/>
             <input type="submit" id="" class="btn btn-default btn-sm" value="del" />
           </form>
@@ -37,7 +38,8 @@
         <input type="text" name="user_name" class="form-control" placeholder="your name">
       </div>
       <div class="col-xs-2">
-        <label>Delete key</label>
+        <!-- todo: restrict length -->
+        <label>Delete key</label> 
         <input type="number" class="form-control" name="del_key" placeholder="0000">
       </div>
       <div class="col-xs-2">
