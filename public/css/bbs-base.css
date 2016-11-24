@@ -19,6 +19,10 @@ body {
   margin-top: 5em;
 }
 
+#btn-post {
+  margin-top: 2em;
+}
+
 .post {
   /*margin-bottom: 2em;*/
 }
