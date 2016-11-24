@@ -2,5 +2,7 @@ create table posts (
   id integer primary key,
   message varchar not null,
   posted_at datetime default current_timestamp not null,
-  user_name varchar
+  user_name varchar,
+  hashed_delete_key varchar,
+  salt varchar
 );
