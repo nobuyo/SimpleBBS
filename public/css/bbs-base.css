@@ -41,10 +41,7 @@ body {
   word-wrap: break-word;
 }
 
-.del-key {
-  float: right;
-}
-
 .btn-del {
+  list-style: none;
   float: right;
 }
