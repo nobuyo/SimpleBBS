@@ -10,9 +10,8 @@ class Post < ActiveRecord::Base
 end
 
 get '/' do
-#  @posts = Post.all
-#  erb :index
-  "Hello, world"
+  @posts = Post.all
+  erb :index
 end
 
 post '/' do
