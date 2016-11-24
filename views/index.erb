@@ -4,17 +4,16 @@
 
 <div id="posts">
   <% @posts.each do |p| %>
-    <div class="panel panel-default">
-      <div class="panel-heading"><%= p.user_name %><%= p.posted_at %></div>
-      <div class="panel-body"><%= p.message %></div>
-    </div>
+    <ul>
+      li
+    </ul>
   <% end %>
 </div>
 
 <div id="forms">
   <form method="POST">
-      <input type="text" name="mess" placeholder="入力してください" value="">
-      <input type="text" name="user_name" placeholder="ユーザー名" value="">
+      <input  class="form-control" type="text" name="mess" placeholder="入力してください" value="">
+      <input  class="form-control" type="text" name="user_name" placeholder="ユーザー名" value="">
       <input type="submit" value="投稿">
   </form>
 </div>
