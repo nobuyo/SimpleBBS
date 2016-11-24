@@ -8,13 +8,12 @@
   <% @posts.each do |p| %>
     <div class="post">
       <div class="post-info"><%= p.id %>:<span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
-      <div class="row">
-        <div class="message"><%= p.message %></div>
+      <div class="message"><%= p.message %>
         <div class="text-right">
           <form method="post">
             <input type="hidden" name="_method" value="DELETE" />
             <input type="hidden" name="id" value="<%= p.id %>" />
-            <input type="submit" id="" class="btn btn-default" value="Delete" />
+            <input type="submit" id="" class="btn btn-default" value="<span class="glyphicon glyphicon-trash"></span>" />
           </form>
         </div>
       </div>
