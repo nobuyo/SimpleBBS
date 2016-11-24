@@ -1,4 +1,4 @@
-$("#btn-post").prop("disabled", true);
+// $("#btn-post").prop("disabled", true);
 
 $("input[name='mess']").blur(function(){
   if($(this).val() == ""){
