@@ -1,16 +1,12 @@
 <div class="container">
 
-<h1 class="text-center">SimpleBBS</h1>
+<h1>SimpleBBS</h1>
 
 <div id="posts">
   <% @posts.each do |p| %>
-    <ul>
-      <li><%= p.id %></li>
-      <ul>
-        <li><%= p.user_name %></li>
-        <li><%= p.message %></li>
-      </ul>
-    </ul>
+    <div class=".col-md-4"><%= p.id %></div>
+    <div class=".col-md-3 .col-md-offset-3"><%= p.user_name %>(<%= p.posted_at %>)</div>
+    <div><%= p.message %></div>
   <% end %>
 </div>
 
