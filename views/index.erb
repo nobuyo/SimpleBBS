@@ -1,9 +1,9 @@
-<div class="container">
 
 <h1>SimpleBBS</h1>
 
 <hr>
 
+<div class="container">
 <div id="posts">
   <% @posts.each do |p| %>
     <div class="post">
@@ -13,7 +13,7 @@
           <form method="post">
             <input type="hidden" name="_method" value="DELETE" />
             <input type="hidden" name="id" value="<%= p.id %>" />
-            <input type="submit" id="" class="btn-sm btn-default" value="del" />
+            <input type="submit" id="" class="btn btn-default btn-sm" value="del" />
           </form>
         </div>
       </div>
@@ -21,13 +21,13 @@
   <% end %>
 </div>
 
-<div id="forms" class="text-center">
+<div id="forms" class="row text-center">
   <form method="POST">
-    <div class="form-group">
+    <div class="col-xs-4">
       <label>Message</label>
-      <input  class="form-control" type="text" name="mess" placeholder="入力してください" value="">
+      <input class="form-control" type="text" name="mess" placeholder="入力してください" value="">
     </div>
-    <div class="form-group">
+    <div class=" col-xs-4">
       <label>Username</label>
       <input type="text" name="user_name" class="form-control" placeholder="your name">
     </div>
