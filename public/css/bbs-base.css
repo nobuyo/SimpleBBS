@@ -4,3 +4,15 @@ body {
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'メイリオ',Meiryo,Helvetica,Arial,Sans-Serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.post {
+  
+}
+
+.post-info {
+  
+}
+
+.post-info span {
+  margin-left: 3em;
+}
