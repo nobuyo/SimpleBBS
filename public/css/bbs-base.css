@@ -41,6 +41,10 @@ body {
   word-wrap: break-word;
 }
 
+.del-key {
+  float: right;
+}
+
 .btn-del {
   float: right;
 }
