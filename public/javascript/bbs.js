@@ -1,5 +1,7 @@
 // $("#btn-post").prop("disabled", true);
 
-if ($("input[name='mess']").val() != "") {
+$("input[name='mess']").change(function () {
+  if ($(this).val() != "") {
     $("#btn-post").prop("disabled", false);
-  };
+  }
+});
