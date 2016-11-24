@@ -4,9 +4,10 @@
 
 <div id="posts">
   <% @posts.each do |p| %>
-    <div class=".col-md-4"><%= p.id %></div>
-    <div class=".col-md-4 .col-md-offset-4"><%= p.user_name %>(<%= p.posted_at %>)</div>
-    <%= p.message %>
+    <div class="post">
+      <div class="post-info"><%= p.id %><span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
+      <%= p.message %>
+    </div>
   <% end %>
 </div>
 
