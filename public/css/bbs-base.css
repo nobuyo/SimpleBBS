@@ -34,3 +34,7 @@ body {
   font-size: 1.2em;
   margin: 1em 2em;
 }
+
+.btn-del {
+  float: right;
+}

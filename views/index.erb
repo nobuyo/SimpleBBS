@@ -9,7 +9,7 @@
     <div class="post">
       <div class="post-info"><%= p.id %>:<span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
       <div class="message"><%= p.message %>
-        <div class="text-right">
+        <div class="btn-del text-right">
           <form method="post">
             <input type="hidden" name="_method" value="DELETE" />
             <input type="hidden" name="id" value="<%= p.id %>" />
