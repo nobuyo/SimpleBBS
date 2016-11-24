@@ -27,7 +27,7 @@ post '/' do
 
   # encrypt password
   delete_key = params[:del_key]
-  if delete_key.present?
+  if delete_key.blank?
     delete_key = "0000"
   end
   password_salt = BCrypt::Engine.generate_salt
