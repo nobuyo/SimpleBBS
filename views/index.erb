@@ -5,6 +5,9 @@
 
 <div class="container">
 <div id="posts">
+  <% if @posts.nil? %>
+    <div class="text-center">投稿はまだありません。メッセージを残しましょう！</div>
+  <% end %>
   <% @posts.each do |p| %>
     <div class="post">
       <div class="post-info"><%= p.id %>:<span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
