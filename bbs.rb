@@ -19,7 +19,7 @@ post '/' do
   if username.empty?
     username = "No Name"
   end
-  if username.length >= 30
+  if username.length > 30
     username = username[0,29] + "..."
   end
   message  = Rack::Utils.escape_html(params[:mess])
