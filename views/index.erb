@@ -15,10 +15,22 @@
 </div>
 
 <div id="forms">
-  <form method="POST">
+<!--   <form method="POST">
       <input  class="form-control" type="text" name="mess" placeholder="入力してください" value="">
       <input  class="form-control" type="text" name="user_name" placeholder="ユーザー名" value="">
       <input type="submit" value="投稿">
+  </form> -->
+
+  <form class="form-inline" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="mess" class="form-control" placeholder="your name">
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" name="user_name" placeholder="jane.doe@example.com">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
 
