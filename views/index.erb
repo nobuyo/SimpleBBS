@@ -5,7 +5,7 @@
 
 <div class="container">
 <div id="posts">
-  <% if @posts.nil? %>
+  <% if @posts.blank? %>
     <div class="text-center">投稿はまだありません。メッセージを残しましょう！</div>
   <% end %>
   <% @posts.each do |p| %>
