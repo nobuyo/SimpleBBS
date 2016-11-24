@@ -12,11 +12,11 @@
     <div class="post">
       <div class="post-info"><%= p.id %>:<span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
       <div class="message"><%= p.message %>
-        <div class="btn-del text-right">
+        <div class="btn-del text-right row">
           <form method="post">
             <input type="hidden" name="_method" value="delete" />
             <input type="hidden" name="id" value="<%= p.id %>" />
-            <input type="number" class="form-control del-key" name="del_key"/>
+            <input type="number" class="form-control del-key col-xs-2" name="del_key"/>
             <input type="submit" id="" class="btn btn-default btn-sm" value="del" />
           </form>
         </div>
