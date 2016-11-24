@@ -9,6 +9,13 @@
     <div class="post">
       <div class="post-info"><%= p.id %>:<span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
       <div class="message"><%= p.message %></div>
+      <div class="text-right">
+        <form method="post">
+          <input type="hidden" name="_method" value="DELETE" />
+          <input type="hidden" name="id" value="<%= p.id %>" />
+          <input type="submit" id="" class="btn btn-default" value="Delete" />
+        </form>
+      </div>
     </div>
   <% end %>
 </div>
