@@ -1,11 +1,13 @@
 body {
   height: 100%;
   margin: 0;
+  font-size: 62.5%;
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",'メイリオ',Meiryo,Helvetica,Arial,Sans-Serif;
   -webkit-font-smoothing: antialiased;
 }
 
 #posts {
+  font-size: 1.6em;
   width: 80%;
   margin-top: 3em;
 }
