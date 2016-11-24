@@ -16,9 +16,10 @@ end
 
 post '/' do
   username = Rack::Utils.escape_html(params[:user_name])
-  if username.nil?
-    username = "NoName"
-  end
+  # if username.nil?
+  #   username = "NoName"
+  # end
+  p username
   message  = Rack::Utils.escape_html(params[:mess])
   Post.create(message: message, posted_at: Time.now, user_name: username)
   redirect '/'
