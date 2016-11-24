@@ -5,7 +5,11 @@
 <div id="posts">
   <% @posts.each do |p| %>
     <ul>
-      li
+      <li><%= p.id %></li>
+      <ul>
+        <li><%= p.user_name %></li>
+        <li><%= p.message %></li>
+      </ul>
     </ul>
   <% end %>
 </div>
