@@ -10,7 +10,7 @@
       <div class="post-info"><%= p.id %>:<span><%= p.user_name %>(<%= p.posted_at %>)</span></div>
       <div class="message"><%= p.message %>
         <div class="btn-del text-right">
-          <form method="post">
+          <form method="delete">
             <input type="hidden" name="_method" value="DELETE" />
             <input type="hidden" name="id" value="<%= p.id %>" />
             <input type="submit" id="" class="btn btn-default btn-sm" value="del" />
