@@ -5,6 +5,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+#posts {
+  width: 80%;
+}
+
 .post {
   
 }
@@ -15,4 +19,8 @@ body {
 
 .post-info span {
   margin-left: 3em;
+}
+
+.message {
+  margin: 1em 2em;
 }
